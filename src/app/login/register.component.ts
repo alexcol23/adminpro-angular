@@ -58,10 +58,6 @@ export class RegisterComponent implements OnInit {
     }
 
     registrarUsuario() {
-        console.log(this.forma.value);
-        console.log(this.forma.valid);
-
-
         if ( this.forma.invalid ) {
             return;
         }
@@ -79,10 +75,8 @@ export class RegisterComponent implements OnInit {
             this.forma.value.correo ,
             this.forma.value.password
         );
-        console.log(usuario);
         this.usuarioService.crearUsuario(usuario)
             .subscribe(data => {
-                console.log(data);
                 this.router.navigate(['/login']);
             });
     }
