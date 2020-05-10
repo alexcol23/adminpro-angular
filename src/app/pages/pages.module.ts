@@ -13,8 +13,10 @@ import {CommonModule} from '@angular/common';
 import {AccountSettingsComponent} from './account-settings/account-settings.component';
 import {PromesasComponent} from './promesas/promesas.component';
 import {RxjsComponent} from './rxjs/rxjs.component';
-import {PipesModule} from "../pipes/pipes.module";
-import { ProfileComponent } from './profile/profile.component';
+import {PipesModule} from '../pipes/pipes.module';
+import {ProfileComponent} from './profile/profile.component';
+import {UsuarioComponent} from './usuario/usuario.component';
+import {ModalUpaloadComponent} from '../components/modal-upaload/modal-upaload.component';
 
 
 @NgModule({
@@ -27,8 +29,11 @@ import { ProfileComponent } from './profile/profile.component';
         GraficoDonaComponent ,
         AccountSettingsComponent ,
         PromesasComponent ,
-        RxjsComponent,
-        ProfileComponent
+        RxjsComponent ,
+        ProfileComponent ,
+        UsuarioComponent ,
+        ModalUpaloadComponent
+
     ] ,
     exports: [
         DashboardComponent ,
@@ -42,7 +47,7 @@ import { ProfileComponent } from './profile/profile.component';
         FormsModule ,
         ChartsModule ,
         CommonModule ,
-        PipesModule,
+        PipesModule ,
         CommonModule
     ]
 })
