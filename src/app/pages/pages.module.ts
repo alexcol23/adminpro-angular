@@ -17,6 +17,9 @@ import {PipesModule} from '../pipes/pipes.module';
 import {ProfileComponent} from './profile/profile.component';
 import {UsuarioComponent} from './usuario/usuario.component';
 import {ModalUpaloadComponent} from '../components/modal-upaload/modal-upaload.component';
+import { HospitalesComponent } from './hospitales/hospitales.component';
+import { MedicosComponent } from './medicos/medicos.component';
+import { MedicoComponent } from './medicos/medico.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import {ModalUpaloadComponent} from '../components/modal-upaload/modal-upaload.c
         RxjsComponent ,
         ProfileComponent ,
         UsuarioComponent ,
-        ModalUpaloadComponent
+        ModalUpaloadComponent,
+        HospitalesComponent,
+        MedicosComponent,
+        MedicoComponent
 
     ] ,
     exports: [

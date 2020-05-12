@@ -4,8 +4,8 @@ import {Usuario} from '../../models/usuario.model';
 import {URL_SERVICES} from '../../config/config';
 import {map} from 'rxjs/operators';
 import Swal from 'sweetalert2';
-import {Router} from "@angular/router";
-import {SubirArchivoService} from "../subir-archivo/subir-archivo.service";
+import {Router} from '@angular/router';
+import {SubirArchivoService} from '../subir-archivo/subir-archivo.service';
 
 
 @Injectable({

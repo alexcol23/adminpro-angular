@@ -29,3 +29,10 @@
 .oculto{
     display: none;
 }
+
+
+.boton-crear{
+    position:absolute;
+    top: 20px;
+    right: 20px;
+}

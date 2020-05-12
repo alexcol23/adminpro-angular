@@ -7,8 +7,11 @@ import {AccountSettingsComponent} from './account-settings/account-settings.comp
 import {PromesasComponent} from './promesas/promesas.component';
 import {RxjsComponent} from './rxjs/rxjs.component';
 import {LoginGuardGuard} from '../services/guards/login-guard.guard';
-import {ProfileComponent} from "./profile/profile.component";
-import {UsuarioComponent} from "./usuario/usuario.component";
+import {ProfileComponent} from './profile/profile.component';
+import {UsuarioComponent} from './usuario/usuario.component';
+import {HospitalesComponent} from './hospitales/hospitales.component';
+import {MedicosComponent} from './medicos/medicos.component';
+import {MedicoComponent} from './medicos/medico.component';
 
 const pagesRoutes: Routes = [
     {
@@ -23,8 +26,11 @@ const pagesRoutes: Routes = [
             {path: 'rxjs' , component: RxjsComponent , data: {titulo: 'RXJS'}} ,
             {path: 'accounts-settings' , component: AccountSettingsComponent , data: {titulo: 'Account Settings'}} ,
             {path: 'profile' , component: ProfileComponent , data: {titulo: 'Perfil'}} ,
-            //Mantenimientos
+            // Mantenimientos
             {path: 'usuarios' , component: UsuarioComponent , data: {titulo: 'Mantenimiento de Usuarios'}} ,
+            {path: 'hospitales' , component: HospitalesComponent , data: {titulo: 'Mantenimiento de Hospitales'}} ,
+            {path: 'medicos' , component: MedicosComponent , data: {titulo: 'Mantenimiento de Medicos'}} ,
+            {path: 'medico/:id' , component: MedicoComponent , data: {titulo: 'Actualizar de Medico'}} ,
             {path: '' , redirectTo: '/dashboard' , pathMatch: 'full'}
         ]
     }
